@@ -1,11 +1,11 @@
 [package]
-name = "nucleus-tauri-utils"
+name = "astrolytics-tauri-utils"
 version = "1.0.0"
-authors = ["The Nucleus Team <hello@nucleus.sh>"]
+authors = ["The Astrolytics Team <hello@astrolytics.io>"]
 edition = "2021"
 license = "MIT"
-description = "Utilities for Nucleus Tauri SDK"
-homepage = "https://www.nucleus.sh"
+description = "Utilities for Astrolytics Tauri SDK"
+homepage = "https://www.astrolytics.io"
 
 [lib]
 crate-type = ["lib"]
