@@ -26,8 +26,8 @@ export interface ServerACK {
   anonId: string;
 }
 
-type EventType = 'nucleus:view'
-  | 'nucleus:sessionend'
+type EventType = '$pageview'
+  | '$sessionend'
   | 'init'
   | 'error'
   | 'pageview'
@@ -68,11 +68,11 @@ export interface HeartbeatEvent {
 }
 
 // any Event that is not a Heartbeat
-export type NucleusEvent = InitOrErrorEvent | OtherEvent;
+export type AstrolyticsEvent = InitOrErrorEvent | OtherEvent;
 
 export interface Store extends SharedProperties{
   appId: string | null;
-  queue: (NucleusEvent | HeartbeatEvent)[];
+  queue: (AstrolyticsEvent | HeartbeatEvent)[];
   props: object;
   device: DeviceInfo
   lastActive: number;

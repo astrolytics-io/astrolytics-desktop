@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Nucleus from 'nucleus-desktop';
+import Astrolytics from 'astrolytics-desktop';
 import toast, { Toaster } from 'react-hot-toast';
 import { invoke } from '@tauri-apps/api/tauri';
 import reactLogo from './assets/react.svg';
@@ -21,7 +21,7 @@ function App() {
       label: 'Track click',
       action: () => {
         if (trackingEnabled) {
-          Nucleus.track('click');
+          Astrolytics.track('click');
           toast('Click tracked!');
         }
       },
@@ -31,7 +31,7 @@ function App() {
       label: 'Track pageview',
       action: () => {
         if (trackingEnabled) {
-          Nucleus.page('/about', { foo: 'bar' });
+          Astrolytics.page('/about', { foo: 'bar' });
           toast('Pageview tracked!');
         }
       },
@@ -41,7 +41,7 @@ function App() {
       label: 'Identify user',
       action: () => {
         if (trackingEnabled) {
-          Nucleus.identify('user-id', { email: 'email@example.com' });
+          Astrolytics.identify('user-id', { email: 'email@example.com' });
           toast('User identified!');
         }
       },
@@ -51,11 +51,11 @@ function App() {
       label: trackingEnabled ? 'Disable tracking' : 'Enable tracking',
       action: () => {
         if (trackingEnabled) {
-          Nucleus.disableTracking();
+          Astrolytics.disableTracking();
           setTrackingEnabled(false);
           toast('Tracking disabled!');
         } else {
-          Nucleus.enableTracking();
+          Astrolytics.enableTracking();
           setTrackingEnabled(true);
           toast('Tracking enabled!');
         }
