@@ -49,7 +49,7 @@ interface CommonEvent extends SharedProperties {
   payload: string | object | null;
   deviceId: DeviceInfo['deviceId'];
   moduleVersion: Options['moduleVersion'];
-  client: 'tauri',
+  client: 'desktop',
 }
 
 export interface InitOrErrorEvent extends CommonEvent {

@@ -226,7 +226,7 @@ export default class Astrolytics {
       userId: this.stored.userId,
       anonId: this.stored.anonId,
       moduleVersion: this.config.moduleVersion,
-      client: 'tauri',
+      client: 'desktop',
     };
 
     if (type === 'init' || type === 'error') {
