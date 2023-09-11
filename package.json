@@ -1,8 +1,8 @@
 {
   "name": "astrolytics-desktop",
   "version": "1.0.1",
-  "main": "./dist/bundle.cjs.js",
-  "module": "./dist/bundle.esm.js",
+  "main": "./dist/bundle.cjs",
+  "module": "./dist/bundle.esm",
   "types": "./dist/types/index.d.ts",
   "type": "module",
   "license": "MIT",

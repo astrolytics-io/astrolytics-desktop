@@ -15,12 +15,12 @@ export default {
   input: 'src/index.ts', // your main TypeScript file
   output: [
     {
-      file: 'dist/bundle.cjs.js', // output bundle location for CommonJS
+      file: 'dist/bundle.cjs', // output bundle location for CommonJS
       format: 'cjs', // CommonJS format for Node.js
       sourcemap: process.env.BUILD_DEV === 'true', // Conditionally generate sourcemaps
     },
     {
-      file: 'dist/bundle.esm.js', // output bundle location for ESM
+      file: 'dist/bundle.esm', // output bundle location for ESM
       format: 'esm', // ES Module format for import
       sourcemap: process.env.BUILD_DEV === 'true', // Conditionally generate sourcemaps
     },
