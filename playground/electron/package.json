@@ -9,7 +9,5 @@
   "devDependencies": {
     "electron": "^26.2.0"
   },
-  "dependencies": {
-    "astrolytics-desktop": "^1.0.0"
-  }
+  "dependencies": {}
 }
