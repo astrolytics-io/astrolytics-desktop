@@ -1,6 +1,6 @@
 {
   "name": "astrolytics-desktop",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "./dist/bundle.cjs",
   "module": "./dist/bundle.esm",
   "types": "./dist/types/index.d.ts",
